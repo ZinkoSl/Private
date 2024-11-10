@@ -23,7 +23,7 @@ globalThis.start ??= () => {
     return;
   }
 
-  const socket = new WebSocket(`wss://[redacted]/connect/${globalThis.serverName}`);
+  const socket = new WebSocket("ws://localhost:8080");
   globalThis.socket = socket;
 
   const closed = () => {
